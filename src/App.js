@@ -129,7 +129,7 @@ class App extends Component {
             <AngleBottomLeft />
           </div>
         </section>
-        <footer>
+        <footer id='footer'>
           <div className='inner-container'>
 
           </div>
