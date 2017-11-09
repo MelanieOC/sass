@@ -1,0 +1,9 @@
+#intro {
+    text-align: center;
+    background-color:map-get($map: $fondos, $key:intro-inicio );
+    @include linearGradient(intro);
+    @include fillAngle(bottom_left, $grisclaro);
+    .color-wrapper {
+        padding-top: 170px;
+    }
+}

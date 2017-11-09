@@ -1,0 +1,11 @@
+@mixin linearGradient($clase){
+    background-image: linear-gradient(map-get($map: $fondos, $key:#{$clase}-inicio ),map-get($map: $fondos, $key:#{$clase}-final ));
+}
+
+@mixin fillAngle($angle, $color){
+    .angle_#{$angle}{
+        svg{
+            fill: $color;
+        }
+    }
+}

@@ -76,7 +76,7 @@ class App extends Component {
       <div>
         <Header />
         <section className='outer-container' id='intro'>
-          <div className='color-wraper' style={{ backgroundImage: 'url(' + fondo + ')' }}>
+          <div className='color-wraper'>
             <div className='inner-container'>
               <article>
                 <h1>MELANIE OCHARAN</h1>
@@ -95,7 +95,7 @@ class App extends Component {
           </div>
         </section>
         <section className='outer-container' id='about'>
-          <div className='color-wraper' style={{ backgroundImage: 'url(' + fondo + ')' }}>
+          <div className='color-wraper'>
             <AngleTopLeft />
             <div className='inner-container'>
               <h2>About Me</h2>
@@ -121,7 +121,7 @@ class App extends Component {
           </div>
         </section>
         <section className='outer-container' id='clients'>
-          <div className='color-wraper' style={{ backgroundImage: 'url(' + fondo + ')' }}>
+          <div className='color-wraper' >
             <AngleTopLeft />
             <div className='inner-container'>
               <h2>Clientes</h2>

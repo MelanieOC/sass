@@ -1,12 +1,12 @@
-@import '_variables';
-@import '_angles';
+@import 'sass/_variables';
+@import 'sass/_mixin';
+@import 'sass/_angles';
+@import 'sass/_intro';
 
-@mixin linearGradient($clase){
-    background-image: linear-gradient(map-get($map: $fondos, $key:#{$clase}-inicio ),map-get($map: $fondos, $key:#{$clase}-final ));
-}
-
-
-
+a {
+    text-decoration: none;
+    word-wrap: break-word;
+  }
 .color-wrapper {
     background-position: top center;
     background-attachment: fixed;
@@ -23,9 +23,12 @@
     margin: 0 auto;
     overflow: hidden;
 }
-
-#intro {
-    text-align: center;
-    background-color: #484080;
-    @include linearGradient(intro);
-  }
+.navbar.navbar-default{
+    margin-bottom: 0;
+}
+#portafolio{
+    background-color: $grisclaro;
+}
+#stats {
+    background-color: $color3;
+}

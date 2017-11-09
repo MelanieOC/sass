@@ -5,9 +5,17 @@
     width: 100%;
     height: 100%; }
 
+#intro {
+  text-align: center;
+  background-color: #484080;
+  background-image: linear-gradient(#484080, #aa304a); }
+  #intro .angle_bottom_left svg {
+    fill: #dcdad8; }
+
 .color-wrapper {
   background-position: top center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-image: url(./triangle_pattern.png); }
 
 .outer-container {
   width: 100%; }
@@ -17,10 +25,5 @@
   max-width: 1500px;
   margin: 0 auto;
   overflow: hidden; }
-
-#intro {
-  text-align: center;
-  background-color: #484080;
-  background-image: linear-gradient(#484080, #aa304a); }
 
 /*# sourceMappingURL=main.css.map */
