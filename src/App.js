@@ -34,49 +34,25 @@ const Header = () => {
   );
 }
 
-const AngleBottomLeft = () => {
+
+const Angle = ({ direccion }) => {
+  const mesures = { top_left: '0, 200 0, 0 200, 0', bottom_left: '200, 200 0, 200 0, 0', bottom_right: '200, 0 200, 200 0, 200' }
   return (
-    <div className='angle_bottom_left'>
+    <div className={'angle_' + direccion}>
       <svg viewBox='0 0 200 200' preserveAspectRatio='none'>
-        <polygon points='200, 200 0, 200 0, 0'></polygon>
+        <polygon points={mesures[direccion]}></polygon>
       </svg>
     </div>
   );
 }
-const AngleTopLeft = () => {
-  return (
-    <div className='angle_top_left'>
-      <svg viewBox='0 0 200 200' preserveAspectRatio='none'>
-        <polygon points='0, 200 0, 0 200, 0'></polygon>
-      </svg>
-    </div>
-  );
-}
-const AngleTopRight = () => {
-  return (
-    <div className='angle_bottom_left'>
-      <svg viewBox='0 0 200 200' preserveAspectRatio='none'>
-        <polygon points='0, 200 0, 0 200, 0'></polygon>
-      </svg>
-    </div>
-  );
-}
-const AngleBottomRight = () => {
-  return (
-    <div className='angle_bottom_right'>
-      <svg viewBox='0 0 200 200' preserveAspectRatio='none'>
-        <polygon points='200, 0 200, 200 0, 200'></polygon>
-      </svg>
-    </div>
-  );
-}
+
 class App extends Component {
   render() {
     return (
       <div>
         <Header />
         <section className='outer-container' id='intro'>
-          <div className='color-wraper'>
+          <div className='color-wrapper'>
             <div className='inner-container'>
               <article>
                 <h1>MELANIE OCHARAN</h1>
@@ -86,7 +62,7 @@ class App extends Component {
                 <a href='#' className='button white '>Contact</a>
               </article>
             </div>
-            <AngleBottomLeft />
+            <Angle direccion='bottom_left' />
           </div>
         </section>
         <section className='outer-container' id='portfolio'>
@@ -95,25 +71,25 @@ class App extends Component {
           </div>
         </section>
         <section className='outer-container' id='about'>
-          <div className='color-wraper'>
-            <AngleTopLeft />
+          <div className='color-wrapper'>
+            <Angle direccion='top_left' />
             <div className='inner-container'>
               <h2>About Me</h2>
             </div>
-            <AngleBottomLeft />
+            <Angle direccion='bottom_left' />
           </div>
         </section>
         <section className='outer-container' id='stats'>
           <div className='inner-container'>
             <h2>Conocimientos</h2>
           </div>
-          <AngleBottomRight />
+          <Angle direccion='bottom_right' />
         </section>
         <section className='outer-container' id='twitter'>
           <div className='inner-container'>
 
           </div>
-          <AngleBottomRight />
+          <Angle direccion='bottom_right' />
         </section>
         <section className='outer-container' id='intagram'>
           <div className='inner-container'>
@@ -121,12 +97,12 @@ class App extends Component {
           </div>
         </section>
         <section className='outer-container' id='clients'>
-          <div className='color-wraper' >
-            <AngleTopLeft />
+          <div className='color-wrapper' >
+            <Angle direccion='top_left' />
             <div className='inner-container'>
               <h2>Clientes</h2>
             </div>
-            <AngleBottomLeft />
+            <Angle direccion='bottom_left' />
           </div>
         </section>
         <footer id='footer'>

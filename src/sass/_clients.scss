@@ -2,4 +2,6 @@
     text-align: center;
     background-color:map-get($map: $fondos, $key:client-final );
     @include linearGradient(client);
+    @include fillAngle(top_left, $white);
+    @include fillAngle(bottom_left, $white);
 }

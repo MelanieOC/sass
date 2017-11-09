@@ -4,6 +4,8 @@
 @import 'sass/_intro';
 @import 'sass/_about';
 @import 'sass/_clients';
+@import 'sass/_stats';
+@import 'sass/_twitter';
 
 a {
     text-decoration: none;
@@ -29,16 +31,10 @@ a {
     margin: 0 auto;
     overflow: hidden;
 }
-
-@each $id in portofolio, twitter{
-    .#{$id}{
-        background-color: $grisclaro;
-    }
+#portfolio{
+    background-color: $grisclaro;
 }
 
-#stats {
-    background-color: $color3;
-}
 #instagram {
     background-color: $white;
 }

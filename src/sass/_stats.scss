@@ -1,0 +1,4 @@
+#stats {
+    background-color: $color3;
+    @include fillAngle(bottom_right, $grisclaro);
+}

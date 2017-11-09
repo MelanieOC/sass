@@ -1,10 +1,7 @@
 .navbar.navbar-default{
   margin-bottom: 0;
 }
-a {
-  text-decoration: none;
-  word-wrap: break-word;
-}
+
 #intro {
   text-align: center;
   background-color: #484080;
@@ -355,43 +352,4 @@ a {
   font-size: 27px;
   font-size: 2.7rem;
   margin-bottom: 40px;
-}
-/* #700px breakpoint ------------------------------------------------------------------------ */
-@media screen and (max-width: 700px) {
-  #twitter article {
-    margin-left: auto;
-    margin-right: auto;
-    width: 94%;
-  }
-}
-/* #500px breakpoint ------------------------------------------------------------------------ */
-@media screen and (max-width: 600px) {
-  #twitter article p {
-    font-size: 36px;
-    font-size: 3.6rem;
-  }
-  #twitter #tweet-fill p,
-  #twitter #twitter_update_list p {
-    font-size: 27px;
-    font-size: 2.7rem;
-  }
-  #twitter #tweet-fill p + p,
-  #twitter #twitter_update_list p + p {
-    font-size: 18px;
-    font-size: 1.8rem;
-  }
-}
-/*************************************************************************
- #Instagram feed container
-**************************************************************************/
-#instagram {
-  background-color: #ffffff;
-  text-align: center;
-}
-/*************************************************************************
- #Clients Container
-**************************************************************************/
-#clients {
-  background-color: #078a72;
-  background-image: linear-gradient(#216793, #078a72);
 }

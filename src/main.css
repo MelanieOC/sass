@@ -27,6 +27,20 @@
   text-align: center;
   background-color: #078a72;
   background-image: linear-gradient(#216793, #078a72); }
+  #clients .angle_top_left svg {
+    fill: white; }
+  #clients .angle_bottom_left svg {
+    fill: white; }
+
+#stats {
+  background-color: #322d59; }
+  #stats .angle_bottom_right svg {
+    fill: #dcdad8; }
+
+#twitter {
+  background-color: #dcdad8; }
+  #twitter .angle_bottom_right svg {
+    fill: white; }
 
 a {
   text-decoration: none;
@@ -49,14 +63,8 @@ a {
   margin: 0 auto;
   overflow: hidden; }
 
-.portofolio {
+#portfolio {
   background-color: #dcdad8; }
-
-.twitter {
-  background-color: #dcdad8; }
-
-#stats {
-  background-color: #322d59; }
 
 #instagram {
   background-color: white; }
