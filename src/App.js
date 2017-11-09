@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import { Nav, NavItem, NavDropdown, Navbar, MenuItem } from 'react-bootstrap';
-import './App.css';
+import './main.css';
 import fondo from './triangle_pattern.png';
 
 const Header = () => {

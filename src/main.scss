@@ -1,0 +1,31 @@
+@import '_variables';
+@import '_angles';
+
+@mixin linearGradient($clase){
+    background-image: linear-gradient(map-get($map: $fondos, $key:#{$clase}-inicio ),map-get($map: $fondos, $key:#{$clase}-final ));
+}
+
+
+
+.color-wrapper {
+    background-position: top center;
+    background-attachment: fixed;
+    background-image: $background;
+}
+
+.outer-container {
+    width: 100%;
+}
+  
+.inner-container {
+    width: $completo;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#intro {
+    text-align: center;
+    background-color: #484080;
+    @include linearGradient(intro);
+  }

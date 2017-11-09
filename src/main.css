@@ -1,0 +1,26 @@
+.angle_bottom_left, .angle_top_left, .angle_bottom_right {
+  width: 100%;
+  height: 160px; }
+  .angle_bottom_left svg, .angle_top_left svg, .angle_bottom_right svg {
+    width: 100%;
+    height: 100%; }
+
+.color-wrapper {
+  background-position: top center;
+  background-attachment: fixed; }
+
+.outer-container {
+  width: 100%; }
+
+.inner-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#intro {
+  text-align: center;
+  background-color: #484080;
+  background-image: linear-gradient(#484080, #aa304a); }
+
+/*# sourceMappingURL=main.css.map */
