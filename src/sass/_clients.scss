@@ -1,0 +1,5 @@
+#clients {
+    text-align: center;
+    background-color:map-get($map: $fondos, $key:client-final );
+    @include linearGradient(client);
+}

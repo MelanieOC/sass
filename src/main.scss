@@ -2,11 +2,17 @@
 @import 'sass/_mixin';
 @import 'sass/_angles';
 @import 'sass/_intro';
+@import 'sass/_about';
+@import 'sass/_clients';
 
 a {
     text-decoration: none;
     word-wrap: break-word;
-  }
+}
+
+.navbar.navbar-default{
+    margin-bottom: 0;
+}
 .color-wrapper {
     background-position: top center;
     background-attachment: fixed;
@@ -14,7 +20,8 @@ a {
 }
 
 .outer-container {
-    width: 100%;
+    width: $completo;
+    height: 200px;
 }
   
 .inner-container {
@@ -23,12 +30,17 @@ a {
     margin: 0 auto;
     overflow: hidden;
 }
-.navbar.navbar-default{
-    margin-bottom: 0;
+
+@each $id in portofolio, twitter{
+    .#{$id}{
+        background-color: $grisclaro;
+    }
 }
-#portafolio{
-    background-color: $grisclaro;
-}
+
 #stats {
     background-color: $color3;
 }
+#instagram {
+    background-color: $white;
+}
+
